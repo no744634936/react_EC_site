@@ -12,7 +12,7 @@
 
 
 6,首先，我想做个 topPage.png 那样的 首页，
-  所以，我先在 homepage.component.js 文件中将所有的html 与 scss 都写出来。
+  所以，我先在 pages/homepage/homepage.component.js 文件中将所有的html 与 scss 都写出来。
 
-7.再根据 homepage.component.js 文件 进行拆分。
+7.再根据 homepage.component.js , homepage.styles.scss 文件 进行拆分。拆分成更小的component。
   拆分过程见下一节
