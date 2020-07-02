@@ -2,7 +2,14 @@
 
 
 先查看app.js
+
 homepage.component.js
-menu-ite.component.js
+
+menu-item.component.js
+
 directory.component.js
+
+
+先将 menu-item 拆出来，
+再将，directory component 拆出来
 
