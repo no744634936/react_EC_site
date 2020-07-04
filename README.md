@@ -15,8 +15,8 @@ preview.component.js
 shop page 有点像，商品推荐页面，一个商品种类下面放几个推荐的商品。
 
 需要注意的的是，
-shop.component.js 的每一个div都有key
-preview.component.js的每一个div 都有key
+shop.component.js 的每一个component都有key
+preview.component.js的component 都有key
 
 一个class component 用来传数据，下面必有一个functional component 用来接收数据并显示出来
 
