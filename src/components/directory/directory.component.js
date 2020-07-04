@@ -50,7 +50,12 @@ class Directory extends React.Component{
             <div className='directory-menu'>
                 {
                     this.state.sections.map(section=>
-                        <MenuItem key={section.id} title={section.title} imageUrl={section.imageUrl}/>
+                        <MenuItem 
+                            key={section.id} 
+                            title={section.title} 
+                            imageUrl={section.imageUrl} 
+                            linkUrl={section.linkUrl}
+                        />
                     )
                 }
                 
@@ -60,12 +65,23 @@ class Directory extends React.Component{
 }
 
 
-// 还可以这样结构
-
+//还可以这样解构
 // {
-//     this.state.sections.map({title,imageUrl,id}=>
-//         <MenuItem key={id} title={title}/>
+//     this.state.sections.map({title,imageUrl,id,linkUrl}=>
+//         <MenuItem key={id} title={title} imageUrl={imageUrl} linkUrl={linkUrl}/>
 //     )
 // }
+
+
+//像上面那样写，也还是比较麻烦。所以还可以这样解构
+// 因为id 并没有要传给 menu-item component 所以要这样写
+//...otherSectionProps 是传给 menu-item component 的
+
+// {
+//     this.state.sections.map({id,...otherSectionProps}=>
+//         <MenuItem key={id} {...otherSectionProps}/>
+//     )
+// }
+
 
 export default Directory;
