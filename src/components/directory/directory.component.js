@@ -67,7 +67,7 @@ class Directory extends React.Component{
 
 //还可以这样解构
 // {
-//     this.state.sections.map({title,imageUrl,id,linkUrl}=>
+//     this.state.sections.map(({title,imageUrl,id,linkUrl})=>
 //         <MenuItem key={id} title={title} imageUrl={imageUrl} linkUrl={linkUrl}/>
 //     )
 // }
@@ -78,7 +78,7 @@ class Directory extends React.Component{
 //...otherSectionProps 是传给 menu-item component 的
 
 // {
-//     this.state.sections.map({id,...otherSectionProps}=>
+//     this.state.sections.map(({id,...otherSectionProps})=>
 //         <MenuItem key={id} {...otherSectionProps}/>
 //     )
 // }

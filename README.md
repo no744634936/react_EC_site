@@ -1,29 +1,20 @@
-显示种类的页面，点击 hats 张图片后会出现 专门显示hat的页面
+
+建立shop page
 查看
-App.js 
-directory.component.js
-menu-item.component.js
-文件
+App.js
+shop.component.js
+preview.component.js
+三个文件即可
 
 
 
-因为homepage component 被Route 包裹了起来，
-所以它能使用Route的props(里面的history,match ,loation)
-但是
 
-directory.component.js
-menu-item.component.js
+需要注意的的是，
+shop.component.js 的每一个div都有key
+preview.component.js的每一个div 都有key
 
-
-是子component 他们使用不了Route的props (里面的history,match ,loation)
-
-为了让 子component也能使用Route的props (里面的history,match ,loation)。
-一种做法是，将props 传给 directory.component.js
-再由directory.component.js 传给 menu-item.component.js 这太麻烦。
-
-另一种做法就是
-在 menu-item.component.js 文件中使用 withRouter
-然后menu-item component就变成了 higher order component了
+一个class component 用来传数据，下面必有一个functional component 用来接收数据并显示出来
 
 
-
+现在只是，将文字显示在了 shop.component 上面，还没有把图片显示在上面
+为了显示图片还要单独做一个component
