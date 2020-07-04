@@ -1,13 +1,18 @@
 
 建立shop page
+
 查看
+
 App.js
+
 shop.component.js
+
 preview.component.js
+
 三个文件即可
 
 
-
+shop page 有点像，商品推荐页面，一个商品种类下面放几个推荐的商品。
 
 需要注意的的是，
 shop.component.js 的每一个div都有key
